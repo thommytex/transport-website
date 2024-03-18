@@ -39,10 +39,11 @@
   </div>
   <div class="offcanvas-body">
     <ul class="dash-nav">
+        <a href="index.php"><li>Home</li></a>
         <a href="user_dashboard_booking.php"><li>Booking</li></a>
         <a href="user_dashboard_transactions.php"><li>Transactions</li></a>
-        <a href=""><li>History</li></a>
-        <a href=""><li>Map</li></a>
+        <a href="#"><li>History</li></a>
+        <a href="map.php"><li>Map</li></a>
         <a href="logout.php"><button class="btn btn-danger">Logout</button></a>
     </ul>
   </div>

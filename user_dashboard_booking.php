@@ -11,7 +11,7 @@
 </head>
 <body>
 <?php  
-    include_once 'modules\dashboard_menu.php';
+    include_once 'modules\navbar.php';
     include_once 'modules\sessions.php';
     echo succMsg(); echo errMsg(); 
     echo auth();
@@ -24,31 +24,31 @@
 <div class="text-center"><img src="transport images\register 2.png" alt=""></div>
 <form action="connections\booking_con.php" class="card m-5 p-3 " method="POST">
     <label for="" class="mt-2 form-label">Name:</label>           
-    <input type="text" class="form-control" name="user_name" value= <?php $email; ?>>
+    <input type="text" class="form-control" name="user_name" value= "<?php $email; ?>" required>
     <label for="" class="mt-2 form-label">Email:</label>           
-    <input type="text"class="form-control" name="email" value="<?php $email; ?>">
+    <input type="text"class="form-control" name="email" value="<?php $email; ?>" required>
     <label for="" class="mt-2 form-label">Destination:</label>
-    <select name="destination" id="" class="form-select">
+    <select name="destination" id="" class="form-select" required>
             <option value="#" selected disabled>SELECT DESTINATION</option>
             <option value="B-G">Bosso-GK campus</option>
             <option value="G-B">GK-Bosso campus</option>
     </select>            
     <label for="" class="mt-2 form-label">Number of passenger(s):</label>           
-    <input type="number" class="form-control" name="no_passengers">
+    <input type="number" class="form-control" name="no_passengers" max="3" required>
 
 <div class="row">
         <div class="col-md-4 md-4">
         <label for="" class="mt-2 form-label">Time:</label>           
-        <input type="number"class="form-control" name="time">
+        <input type="number"class="form-control" name="time" max="8" required>
         </div>
         <div class="col-md-4 md-4">
         <label for="" class="mt-2 form-label">Date:</label>           
-        <input type="date"class="form-control" name="travel_date">
+        <input type="date"class="form-control" name="travel_date" required>
         </div>
         <div class="col-md-4 md-4">
 
         <label for="" class="mt-2 form-label">Car_Type:</label> 
-        <select name="car_type" id="" class="form-select">
+        <select name="car_type" id="" class="form-select" required>
             <option value="selected" selected disabled>CHOOSE CAR-TYPE</option>
             <option value="32seaters">32 seaters</option>
             <option value="18seaters">18 seaters</option>

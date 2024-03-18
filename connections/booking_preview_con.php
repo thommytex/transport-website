@@ -39,11 +39,21 @@ elseif (isset($_GET['delete'])){
     $query = mysqli_query($connectDB,$sql);
     if ($query) {
         $_SESSION['success_msg']='deleted';
-        header('location:../admin\approvals.php');
+        if ($_SESSION['role']='user') {
+            header('location:../user_dashboard_transactions.php');
+
+        }elseif ($_SESSION['role']='admin') {
+            header('location:../admin\approvals.php');
+        }
     }
     else{
         $_SESSION['error_msg']='deletion Failed';
-        header('location:../admin\approvals.php');
+        if ($_SESSION['role']='user') {
+            header('location:../user_dashboard_transactions.php');
+
+        }elseif ($_SESSION['role']='admin') {
+            header('location:../admin\approvals.php');
+        }
     }
 }
 else {

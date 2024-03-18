@@ -9,6 +9,7 @@
 </head>
 <body>
 <?php 
+    include_once('modules\navbar.php');
     require_once 'modules\sessions.php';
     echo succMsg(); echo errMsg(); 
     ?>

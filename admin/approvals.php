@@ -35,7 +35,9 @@ require_once '../connections\db_con.php';
     </style>
 </head>
 <body>
-    <?php require_once '../modules\navbar.php'?>
+    
+    <?php require_once '../modules\dashboard_menu.php'?>
+    <?php include_once('modules\navbar.php'); ?>
     <?php echo succMsg(); echo errMsg();?>
 
     <?php          
@@ -67,5 +69,5 @@ require_once '../connections\db_con.php';
         </div>
 
 </body>
-<script src="assets\js\script.js"></script>
+<script src="../assets\js\bootstrap.bundle.min.js"></script>
 </html>

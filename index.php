@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href=""> -->
     <!-- remember to put image for the tab -->
-    <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="stylesheet" href="assets\css\css2.css">
+    <link rel="stylesheet" href="assets\css\Ephesis\Ephesis-Regular.ttf">
     <link rel="stylesheet" href="assets\css\bootstrap.min.css">
     <title>Document</title>
 </head>
@@ -30,18 +31,18 @@
   <p>
    Our goal is to centralize travel tech industry and make ticket bookings to your preferred location easily accessible from the comfort of your home. The bus is centralized for movement from Bosso campus-GK campus and everyother pickup stations and vice versa.  
   </p>
-  <button class="btn btn-success"><a class="nav-link text-light" href="">Book</a></button>
+  <button class="btn btn-success"><a class="nav-link text-light" href="user_dashboard_booking.php">Book</a></button>
 </div>
 <!-- services -->
 <h1 class="text-center mt-5" id="services">OUR SERVICES</h1>
 
 <div class="services">
   <div class="card">
-    <img src="transport images\32 seaters.jpg" class="card-img-top" alt="...">
+    <img src="transport images\marcopolo.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Marcopolo</h5>
         <p class="card-text">Book a marcopolo</p>
-        <a href="#" class="btn btn-success">Book</a>
+        <a href="user_dashboard_booking.php" class="btn btn-success">Book</a>
       </div>
     </div>
   <div class="card">
@@ -49,23 +50,23 @@
       <div class="card-body">
         <h5 class="card-title">32-seaters</h5>
         <p class="card-text">Book a 32-seater bus</p>
-        <a href="#" class="btn btn-success">Book</a>
+        <a href="user_dashboard_booking.php" class="btn btn-success">Book</a>
       </div>
   </div>
   <div class="card">
-    <img src="transport images\32 seaters.jpg" class="card-img-top" alt="...">
+    <img src="transport images\18 seaters2.jpeg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">18-seaters</h5>
         <p class="card-text">Book a 18-seater bus</p>
-        <a href="#" class="btn btn-success">Book</a>
+        <a href="user_dashboard_booking.php" class="btn btn-success">Book</a>
       </div>
   </div>
   <div class="card">
-    <img src="transport images\32 seaters.jpg" class="card-img-top" alt="...">
+    <img src="transport images\sharon3.jpeg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Sharon</h5>
         <p class="card-text">Book a sharon vehicle</p>
-        <a href="#" class="btn btn-success">Book</a>
+        <a href="user_dashboard_booking.php" class="btn btn-success">Book</a>
       </div>
   </div>
 </div>
@@ -77,6 +78,21 @@
 </p>
   <div class="card p-4">
   We are an inter school transport booking agency with students dedicated to move from one location to the other around the school. We want our customer to spend less time purchasing their travel tickets. Our mission is to save you time and stress with our simple online booking platform.
+  </div>
+</div>
+<!-- contact us -->
+<h1 class="text-center m-5" id="contact-us"> CONTACT US</h1>
+<div>
+  <div class="col-md-4 mb-3 mb-sm-0 mx-auto">
+    <div class="card w-5 text-center">
+    <div>
+  <img src="transport images\h and s.png" class="card-img-top" style="width: 200px;">
+  <div class="card-body">
+    <p class="card-text"><b>For questions and enquires, you can contact us on <br>0705 276 1255. We very much appreciate your feedback. Enjoy our services</b></p>
+  </div>
+</div>
+    </div>
+  </div>
   </div>
 </div>
 <!-- news letter form -->

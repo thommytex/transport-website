@@ -48,7 +48,7 @@ if ( $email= $_SESSION['email']) {
             <h5>Travel date: <?php echo $row['travel_date']; ?></h5>
             <h5>car type: <?php echo $row['car_type']; ?></h5>
             <h5>Booking status: <?php echo $row['booking_status']; ?></h5>
-            <a href="#"><button class="btn btn-danger mt-2">Cancel booking</button></a>
+            <a href="connections\booking_preview_con.php?delete='<?php echo $row['id']; ?>'"><button class="btn btn-danger mt-2">Cancel booking</button></a>
 
     </div>
       </div>
